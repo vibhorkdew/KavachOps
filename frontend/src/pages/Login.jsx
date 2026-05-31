@@ -139,6 +139,16 @@ const Login = ({ setAuthenticated }) => {
                     >
                         Secure Login
                     </button>
+                    <p
+                        style={{
+                            color: "#64748b",
+                            fontSize: "12px",
+                            marginTop: "20px",
+                            textAlign: "center"
+                        }}
+                    >
+                        Developed by Vibhor Dewangan
+                    </p>
 
                 </div>
 
@@ -162,7 +172,7 @@ const styles = {
         flex: 1,
         minWidth: "350px",
         background:
-        "radial-gradient(circle at top left,#0f172a,#020617)",
+            "radial-gradient(circle at top left,#0f172a,#020617)",
         position: "relative",
         display: "flex",
         justifyContent: "center",
@@ -175,7 +185,7 @@ const styles = {
         width: "450px",
         height: "450px",
         background:
-        "rgba(56,189,248,0.12)",
+            "rgba(56,189,248,0.12)",
         filter: "blur(120px)",
         borderRadius: "50%"
     },
@@ -230,14 +240,14 @@ const styles = {
         width: "100%",
         maxWidth: "420px",
         background:
-        "rgba(15,23,42,0.75)",
+            "rgba(15,23,42,0.75)",
         border:
-        "1px solid rgba(255,255,255,0.06)",
+            "1px solid rgba(255,255,255,0.06)",
         backdropFilter: "blur(16px)",
         borderRadius: "26px",
         padding: "45px",
         boxShadow:
-        "0 0 40px rgba(0,0,0,0.35)"
+            "0 0 40px rgba(0,0,0,0.35)"
     },
 
     loginTitle: {
@@ -257,7 +267,7 @@ const styles = {
         marginBottom: "20px",
         borderRadius: "14px",
         border:
-        "1px solid rgba(255,255,255,0.06)",
+            "1px solid rgba(255,255,255,0.06)",
         background: "#0f172a",
         color: "white",
         fontSize: "15px",
@@ -270,7 +280,7 @@ const styles = {
         borderRadius: "14px",
         border: "none",
         background:
-        "linear-gradient(90deg,#0ea5e9,#38bdf8)",
+            "linear-gradient(90deg,#0ea5e9,#38bdf8)",
         color: "white",
         fontSize: "16px",
         fontWeight: "600",
@@ -280,3 +290,4 @@ const styles = {
 };
 
 export default Login;
+

@@ -72,9 +72,25 @@ const Dashboard = ({ setPage }) => {
                         style={styles.logo}
                     />
 
-                    <h2 style={styles.logoText}>
-                        KavachOps
-                    </h2>
+                    <div>
+
+                        <h2 style={styles.logoText}>
+                            KavachOps
+                        </h2>
+
+                        <p
+                            style={{
+                                fontSize: "11px",
+                                color: "#64748b",
+                                marginTop: "-8px",
+                                marginLeft: "2px"
+                            }}
+                        >
+                            by Vibhor Dewangan
+                        </p>
+
+                    </div>
+
 
                 </div>
 
@@ -94,6 +110,7 @@ const Dashboard = ({ setPage }) => {
                     <li
                         className="menu-item"
                         style={styles.menuItem}
+                        onClick={() => setPage("threats")}
                     >
                         <FaExclamationTriangle />
                         Threats
@@ -102,6 +119,7 @@ const Dashboard = ({ setPage }) => {
                     <li
                         className="menu-item"
                         style={styles.menuItem}
+                        onClick={() => setPage("vulnerabilities")}
                     >
                         <FaBug />
                         Vulnerabilities
@@ -119,6 +137,7 @@ const Dashboard = ({ setPage }) => {
                     <li
                         className="menu-item"
                         style={styles.menuItem}
+                        onClick={() => setPage("ai")}
                     >
                         <FaRobot />
                         AI Assistant
@@ -127,6 +146,7 @@ const Dashboard = ({ setPage }) => {
                     <li
                         className="menu-item"
                         style={styles.menuItem}
+                        onClick={() => setPage("monitoring")}
                     >
                         <FaChartLine />
                         Monitoring

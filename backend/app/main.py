@@ -1,5 +1,9 @@
 from fastapi import FastAPI
 
+from app.api import vulnerabilities
+
+from app.api import containers
+
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api import auth
@@ -28,3 +32,5 @@ app.add_middleware(
 )
 
 app.include_router(auth.router)
+app.include_router(containers.router)
+app.include_router(vulnerabilities.router)
